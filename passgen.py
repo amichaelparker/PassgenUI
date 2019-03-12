@@ -16,7 +16,7 @@ class qtpassgen(QtWidgets.QMainWindow, ui.Ui_MainWindow):
 
     def generate(self):
         ''' Call gen module based on UI input '''
-        
+
         self.output.clear()
         self.output.insert(gen.pass_gen(int(self.word_count.currentText()), \
                                         self.caps.isChecked(), \
